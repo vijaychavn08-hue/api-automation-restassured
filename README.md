@@ -1,4 +1,4 @@
-# REST Assured API Automation Framework
+# Advanced REST Assured API Automation Framework
 
 ![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
 ![Maven](https://img.shields.io/badge/Maven-3.8+-C71A36?logo=apachemaven)
@@ -9,7 +9,7 @@
 ![CI Pipeline](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-A production-grade, portfolio-ready API test automation framework built using **Java 17**, **REST Assured**, **TestNG**, **Cucumber BDD**, **Jackson**, **JSON Schema Validation**, **Allure Reporting**, and **GitHub Actions**.
+Professional API Automation Framework using Java, REST Assured, TestNG, Cucumber BDD, Jackson, JSON Schema Validation, Allure, and GitHub Actions.
 
 ---
 
@@ -225,11 +225,14 @@ mvn clean test -DbaseUrl=https://jsonplaceholder.typicode.com
 
 Generate and open the interactive Allure HTML report:
 ```bash
-# Serve report directly in browser
-mvn allure:serve
+# Generate static HTML report in target/site/allure-maven-plugin/
+mvn io.qameta.allure:allure-maven:report
 
-# Or generate static HTML report in target/site/allure-maven-plugin/
-mvn allure:report
+# Or serve live interactive report directly in browser
+mvn io.qameta.allure:allure-maven:serve
+
+# Or using Allure CLI (if installed)
+allure serve target/allure-results
 ```
 
 Allure results are automatically generated in `target/allure-results/` with full REST request/response body, headers, and status code attachments.
@@ -257,5 +260,5 @@ This framework executes automated tests against the public [JSONPlaceholder](htt
 
 **Vijay Chavan**
 - **Role**: Senior Automation QA Engineer | SDET | Automation Lead
-- **LinkedIn**: [linkedin.com/in/vijaychavan08](https://www.linkedin.com/in/vijaychavhan08)
 - **GitHub**: [github.com/vijaychavn08-hue](https://github.com/vijaychavn08-hue)
+- **LinkedIn**: [linkedin.com/in/vijaychavhan08](https://www.linkedin.com/in/vijaychavhan08/)
