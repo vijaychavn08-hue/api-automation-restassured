@@ -1,0 +1,27 @@
+# Maven build output
+target/
+*.class
+
+# Allure reports and results
+allure-results/
+allure-report/
+.allure/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Logs and environment
+logs/
+*.log
+.env
